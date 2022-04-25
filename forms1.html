@@ -14,12 +14,12 @@
                 <form action="Ed" method="">
                     <p>
                         <label for="username">Enter a Name:</label>
-                        <input id="username" type="text" placeholder="Enter a Name" name="username">
+                        <input id="username" type="text" placeholder="Enter a Name" name="username" required>
                     </p>
 
                     <p>
                         <label for="password">Enter a Password:</label>
-                        <input id="password" type="text" placeholder="enter passowrd" name="password">
+                        <input id="password" type="text" placeholder="enter passowrd" name="password" required>
                     </p>
 
                     <button>Submit</button>
@@ -29,6 +29,7 @@
         </section>
             <!-- this block of code is a section with a header element, and a form that takes the action query from reddit
             along with input as text and name attribute, followed by a button -->
+            <hr>
         <section>
         <h1>Query Strings</h1>
             <form action="https://www.reddit.com/search/">
@@ -48,13 +49,13 @@
                 <button>Google Search</button>
             </form>
         </section>
-
+        <hr>
         <section>
             <h1>Checkboxes and radios</h1>
             <form action="/birds">
                 <label id="agree">I agree to everything</label>
                 <input type="checkbox" name="agree_tos" id="agree">
-                <!--  -->
+                <!-- This block of code is type of radio buttons, user can select a size that fits them best and submit their choice -->
                 <p>
                     <label for="s">Small:</label>
                     <input type="radio" name="size" id="s" value="s">
@@ -65,10 +66,10 @@
                     <label for="l">Large</label>
                     <input type="radio" name="size" id="l" value="l">
                 </p>
-                    <!--  -->
+            
                 <p>
                     <label for="colors">What Is Your Favorite Color?</label>
-                    <!--  -->
+                    <!-- this is a selection list, allows user to select between colors and choose their favorite -->
                     <select name="colors" id="colors">
                         <option value="Red">Red</option>
 
@@ -78,13 +79,13 @@
 
                     </select>
                 </p>
-                <!--  -->
+                <!-- this is a simple scroll bar with attributes with min and max ranges -->
                 <p>
                     <label for="sbar">ScrollBar</label>
 
                     <input type="range" id="sbar" min="5" max="100" name="scrollbar">
                 </p>
-                <!--  -->
+                <!-- This is a text area, you can write whatever you want in here -->
                 <p>
                     <label for="requests">Type In Special Request</label>
                     <textarea id="requests" name="textarea" rows="15" cols="15" placeholder="Type Here!"></textarea>
@@ -92,11 +93,33 @@
 
                 
                 <button>Submit</button>
+            </form>
+        </section>
 
+        <hr>
 
+        <section>
+            <form action="/bananas">
+
+                <!-- this is a textbox that allows user to type in free code. -->
+                <label for="eddie">Textbox</label>
+                <input type="text" name="textBox" id="eddie" required>
+
+                <!-- this code is asking user to input a password with a min length of 5 letters or numbers and a max of 10. -->
+                <label for="password"></label>
+                <input type="text" name="pword" id="password" minlength="5" maxlength="10">
+
+                <!-- email textbox that requires a valid email -->
+                <p>
+                    <input type="email" required>
+                </p>
+
+                <button type="submit">Validation button</button>
 
             </form>
         </section>
+
+
     </body>
 
 </html>
