@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Please fill out the form below</h3>
+
+    <section>
+        <form action="eddie">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" placeholder="Fist Name" name="fistName" minlength="0" maxlength="10" required>
+
+            <label for=""lastName">Last Name:</label>
+            <input type="text" id="lastName" placeholder="Last Name" name="lastName" minlength="0" maxlength="10" required>
+
+
+            <p>
+                <label for="food">What food would you like to eat?</label>
+                <select name="food" id="food">
+                    <option value="Burger">Burger</option>
+                    <option value="Tacos">Tacos</option>
+                    <option value="Pizza">Pizza</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="allergies">Do you have any allergies?</label>
+                <textarea id="allergies" name="textarea" rows="5" cols="10" placeholder="Allergies?"></textarea>
+            </p>
+
+
+            <br><br>
+            <button type="submit">Send</button>
+
+        </form>
+    </section>
+</body>
+</html>
