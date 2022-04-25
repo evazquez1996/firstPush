@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+    <!-- This block of code is another form element, containing paragraphs, labels, inputs and attributes of id, type, name and placeholder -->
+    <body>
+        <section>
+            <h1>Username & Password Inputs
+
+                <form action="Ed" method="">
+                    <p>
+                        <label for="username">Enter a Name:</label>
+                        <input id="username" type="text" placeholder="Enter a Name" name="username">
+                    </p>
+
+                    <p>
+                        <label for="password">Enter a Password:</label>
+                        <input id="password" type="text" placeholder="enter passowrd" name="password">
+                    </p>
+
+                    <button>Submit</button>
+
+                </form>
+            </h1>    
+        </section>
+            <!-- this block of code is a section with a header element, and a form that takes the action query from reddit
+            along with input as text and name attribute, followed by a button -->
+        <section>
+        <h1>Query Strings</h1>
+            <form action="https://www.reddit.com/search/">
+                    
+                <input type="text" name="q">
+                <button>Search Reddit</button>
+
+            </form>
+            <!-- this block of code with a form that takes the action search query from youtube -->
+            <form action="https://www.youtube.com/results?search_query=">
+                <input type="text" name="q">
+                <button>Youtube Search</button>
+            </form>
+            <!-- this block of code with a form that takes the action search query from google -->
+            <form action="https://www.google.com/search?q=">
+                <input type="text" name="q">
+                <button>Google Search</button>
+            </form>
+        </section>
+
+        <section>
+            <h1>Checkboxes and radios</h1>
+            <form action="/birds">
+                <label id="agree">I agree to everything</label>
+                <input type="checkbox" name="agree_tos" id="agree">
+                <!--  -->
+                <p>
+                    <label for="s">Small:</label>
+                    <input type="radio" name="size" id="s" value="s">
+
+                    <label for="m">Medium</label>
+                    <input type="radio" name="size" id="m" value="m">
+
+                    <label for="l">Large</label>
+                    <input type="radio" name="size" id="l" value="l">
+                </p>
+                    <!--  -->
+                <p>
+                    <label for="colors">What Is Your Favorite Color?</label>
+                    <!--  -->
+                    <select name="colors" id="colors">
+                        <option value="Red">Red</option>
+
+                        <option value="Blue">Blue</option>
+
+                        <option value="Green">Green</option>
+
+                    </select>
+                </p>
+                <!--  -->
+                <p>
+                    <label for="sbar">ScrollBar</label>
+
+                    <input type="range" id="sbar" min="5" max="100" name="scrollbar">
+                </p>
+                <!--  -->
+                <p>
+                    <label for="requests">Type In Special Request</label>
+                    <textarea id="requests" name="textarea" rows="15" cols="15" placeholder="Type Here!"></textarea>
+                </p>
+
+                
+                <button>Submit</button>
+
+
+
+            </form>
+        </section>
+    </body>
+
+</html>
