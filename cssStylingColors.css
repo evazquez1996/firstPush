@@ -1,16 +1,17 @@
+/* i am changing the font color of the h1 tag to green by grabbing the css selector - h1. */
 h1 {
     color: green;
 }
-
+/*  i am changing the font color of the h2 tag to purple by grabbing the css selector - h2. */
 h2 {
     color: purple;
 }
-
+/*  i am changing the font color of the paragraph text to pink and also changing the background color of the paragraph to green by grabbing the css selector - p. */
 p {
     color: pink;
     background-color: green;
 }
-
+/* I am changing the font color of the text inside of the button to white while applying the color green to the background of the button */
 button {
     color: white;
     background-color: blue;
