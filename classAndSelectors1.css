@@ -1,3 +1,6 @@
+/* 
+    Here I am changing the text font color of the list items, using their corresponding classes. 
+*/
 .al {
     color: crimson;
 }
