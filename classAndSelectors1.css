@@ -1,0 +1,31 @@
+.al {
+    color: crimson;
+}
+
+.nd {
+    color: green;
+}
+
+.mi {
+    color: #FBEC5D;
+}
+
+.oh {
+    color: red;
+}
+
+.tx {
+    color: orange;
+}
+
+#yes {
+    color: white;
+    background-color: green;
+}
+
+#no {
+    color: white;
+    background-color: red;
+}
+
+
