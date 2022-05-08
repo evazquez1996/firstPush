@@ -1,53 +1,80 @@
-/* */
+/* 
+    universal selector is "*"
+    changes all of web pages's text color to pink through property: color value:pink
+    changes all of the web pages background color to green through the property selector
+    and the value. 
 
+    * {
+        color: pink;
+        background-color: green;
+    }
+*/
+
+/* property selector, changing the b/g color of the entire body property */
 body {
     background-color: beige;
 }
 
+/* another property selector, changing the font size of the text inside the button */
 button {
     font-size: 30px;
 }
 
+/* multuiple properties, it is changing the colors of all the h1's and h2's */
 h1, h2 {
     color: crimson;
 }
 
+/* ID attribute selector, it is changing the color and b/g of all the elements that 
+have the id of signup */
 #signup {
     color: blue;
     background-color: pink;
 }
 
+/* class attribute selector, it is changing the color of the elements that contain the 
+following class attribute of tag */
 .tag {
     color: pink;
 }
 
+/* descendent selectors, it is grabbing the element with the class attribute,
+then looking for the immediate child of anchor tag and applying the color purple to it. */
 .post a {
     color: purple;
 }
 
+/* this is an attribute selector, it is grabing the anchor element and looking
+for the specific attribute of "href=google" and assigning it the color darkorange */
 a[href*="google"] {
     color:darkorange;
 }
 
+/* this is a child combinator, it will grab the foot element, and look
+for the immediate child within the footer element containing a anchor tag. */
 footer > a {
     color: purple;
 }
 
-/*  */
+/* this is a psuedo class selector, it will change the color of the button when
+the mouse is hovered over.  */
 button:hover {
     background-color: red;
     color:aquamarine;
 }
 
-/*  */
+/* another psuedo class selector, this one will change the color of the button
+when an action is done on it, like once you click the button it will change green */
 .post button:active{
     background-color: green;
 }
 
+/* another psuedo class, this one changes the first letter of every word inside the h2 */
 h2::first-letter {
     font-size: 50px;
 }
 
+/* this one, changes the first line in the paragraph green.  */
 p::first-line {
     color: green; 
 }
