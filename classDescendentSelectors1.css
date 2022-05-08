@@ -1,0 +1,19 @@
+/* this is a child combinator; grabbing the header element then
+going after its immediate child element which is the anchor element tag. */
+header > a {
+    color: aqua;
+    font-size: 30px;
+}
+/* this block of code is a descendent selector meaning
+it grabs the element with the id attribute and anything nested 
+underneth that element is a descendent to the paragraph element
+and changing it blue */
+#schools a {
+    color: blue;
+}
+/* this block of code is grabbing the schools class form the paragraph
+element and then grabbing the descendent element with the class of hs.
+and turning it red */
+#schools > .hs {
+    color: red;
+}
