@@ -5,24 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Bootstrap</title>
-
+    <!-- Links the Bootstrap library to the html file -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
     crossorigin="anonymous">
 
 </head>
-
+<!-- In the body section, I am creating section with a h1, 2 divs and a button component. -->
 <body>
+    <!-- the section element has nested elements insides its body including h1, and 2 divs. -->
     <section>
+        <!-- the h1 creates the header with "The Matrix" text with the following class atributes, display size of 4, centered text, white text w/ black bg  -->
         <h1 class="display-4 text-center text-white bg-dark">The Matrix</h1>
+        <!-- first div with the alert class. -->
         <div class="alert alert-danger text-center" role="alert">
-            Which pill will you choose?
+           Are you going to choose the blue pill or the red pill?
             <br>
             <br>
-            <div class="btn-group">
-                <button class="btn btn-danger">Red Pill</button>
-                <button class="btn btn-primary">Blue Pill</button>
-            </div>
+        </div>
+        <!-- second div with the buttons inside the body, with the button classes also assigning the colors red and blue. -->
+        <div class="text-center">
+            <button class="btn btn-danger">Red Pill</button>
+            <button class="btn btn-primary">Blue Pill</button>
         </div>
     </section>
 </body>
