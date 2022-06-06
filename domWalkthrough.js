@@ -121,3 +121,16 @@ for (let i = 10; i > 0; i--) {
 // let lastItem = document.querySelector('.list-group-item:last-child');
 // lastItem.style.color = 'coral';
 
+let titles = document.querySelectorAll('.title');
+console.log(titles);
+
+titles[0].textContent = 'Hello Eduardo';
+
+let odd = document.querySelectorAll('li:nth-child(odd)');
+let even = document.querySelectorAll('li:nth-child(even)');
+
+for (var i =0; i < odd.length; i++){
+    odd[i].style.backgroundColor = 'grey';
+    even[i].style.backgroundColor = 'green';
+    even[i].style.color = 'whitesmoke'; 
+}
